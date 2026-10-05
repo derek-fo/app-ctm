@@ -13,4 +13,17 @@ module.exports = defineConfig([
   eslintConfigPrettier,
   // Pastas que o ESLint deve ignorar.
   { ignores: ['dist/*', 'android/*', 'ios/*'] },
+  {
+    files: ['src/**/*.{ts,tsx}'],
+    rules: {
+      'no-restricted-syntax': [
+        'error',
+        {
+          // Procura qualquer atributo JSX chamado "className".
+          selector: "JSXAttribute[name.name='className']",
+          message: 'NativeWind está bloqueado até a Aula 2.4. Use StyleSheet.',
+        },
+      ],
+    },
+  },
 ]);
