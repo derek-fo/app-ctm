@@ -1,7 +1,11 @@
 {
+  // Formata o arquivo com o Prettier toda vez que você salvar.
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Aplica as correções automáticas do ESLint ao salvar.
   "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit",
-    "source.organizeImports": "explicit",
-    "source.sortMembers": "explicit"
-  }
+    "source.fixAll.eslint": "explicit"
+  },
+  // Usa a versão do TypeScript instalada no projeto, e não a que vem com o VS Code.
+  "js/ts.tsdk.path": "node_modules/typescript/lib"
 }
