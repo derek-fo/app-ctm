@@ -1,0 +1,3 @@
+# Todo arquivo de texto será guardado com final de linha LF,
+# independentemente do sistema operacional de quem fez o commit.
+* text=auto eol=lf
